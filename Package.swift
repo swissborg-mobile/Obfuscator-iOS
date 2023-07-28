@@ -7,9 +7,8 @@ let package = Package(
     products: [.library(name: "Obfuscator", targets: ["Obfuscator"])],
     targets: [.target(name: "Obfuscator",
                       path: ".",
-                      exclude: ["Obfuscator.podspec", "./Example/ExampleTests/"],
-                      resources: [.copy("./Example"),
-                                  .copy("README.md"),
+                      exclude: ["Obfuscator.podspec", "./Example/"],
+                      resources: [.copy("README.md"),
                                   .copy("LICENSE")],
                       publicHeadersPath: "include"
     )]
